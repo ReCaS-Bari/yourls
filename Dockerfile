@@ -9,5 +9,5 @@ COPY https_yourls.conf /etc/apache2/sites-available/
 COPY apache2-start.sh /usr/local/bin/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["start.sh"]
+CMD ["apache2-start.sh"]
 
