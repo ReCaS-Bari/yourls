@@ -6,7 +6,7 @@ RUN apt update && \
 RUN a2enmod ssl
 
 COPY https_yourls.conf /etc/apache2/sites-available/
-COPY start.sh /usr/local/bin/
+COPY apache2-start.sh /usr/local/bin/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["start.sh"]
